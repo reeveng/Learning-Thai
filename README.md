@@ -11,3 +11,13 @@ It's my intention to every day learn some Thai words. I'll write them down, try 
 | 5   | คุณ        | You                 | Khun            | pom rak khun         |
 | 6   | สวย        | Beautiful           | suwaii          | pom suwaii           |
 | 7   | มาก        | A lot / much / many | maak            | pom rak khum maak    |
+| 8   | ฉี่        | Pee                 | chi             | pom puat chi         |
+| 9   | ปวด        | Pain                | puat            | pom puat chi         |
+
+Clarifications for sentences 8 and 9:
+
+- I pain pee, means I need to pee
+
+Clarifications for sentence 1:
+
+- I eat vegan, means I am vegan
