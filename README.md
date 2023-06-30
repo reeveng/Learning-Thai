@@ -13,6 +13,7 @@ It's my intention to every day learn some Thai words. I'll write them down, try 
 | 7   | มาก        | A lot / much / many | maak            | pom rak khum maak    |
 | 8   | ฉี่        | Pee                 | chi             | pom puat chi         |
 | 9   | ปวด        | Pain                | puat            | pom puat chi         |
+| 10  | เจ็บ       | Hurt                | Cheb            | Cheb                 |
 
 Clarifications for sentences 8 and 9:
 
@@ -21,3 +22,7 @@ Clarifications for sentences 8 and 9:
 Clarifications for sentence 1:
 
 - I eat vegan, means I am vegan
+
+Clarifications for sentence 10:
+
+Hurt, means I am hurting, it hurts, ...
