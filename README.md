@@ -4,7 +4,7 @@ It's my intention to every day learn some Thai words. I'll write them down, try 
 
 | nr. | Thai word  | English word                                               | Pronaunciation                                | in a sentence                          |
 | --- | ---------- | ---------------------------------------------------------- | --------------------------------------------- | -------------------------------------- |
-| 1   | มังสวิรัติ | Vegan / veganism                                           | mang-sa-wee-rat, mangsaweeratman              | pom kin mangsaweerat                   |
+| 1   | มังสวิรัติ | Vegan / veganism                                           | mang-sa-wee-rat, mangsaweerat              | pom kin mangsaweerat                   |
 | 2   | ผม         | I                                                          | pom                                           | pom suwaii                             |
 | 3   | กิน        | Eat                                                        | kin                                           | pom kin maak                           |
 | 4   | รัก        | Love                                                       | rak                                           | pom rak khun                           |
