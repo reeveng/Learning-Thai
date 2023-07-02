@@ -4,18 +4,18 @@ It's my intention to every day learn some Thai words. I'll write them down, try 
 
 | nr. | Thai word  | English word                                               | Pronaunciation                                | in a sentence                          |
 | --- | ---------- | ---------------------------------------------------------- | --------------------------------------------- | -------------------------------------- |
-| 1   | มังสวิรัติ | Vegan / veganism                                           | Mang-Sa-Wee-Rat                               | pom kin mangsaweerat                   |
+| 1   | มังสวิรัติ | Vegan / veganism                                           | mang-sa-wee-rat, mangsaweeratman              | pom kin mangsaweerat                   |
 | 2   | ผม         | I                                                          | pom                                           | pom suwaii                             |
 | 3   | กิน        | Eat                                                        | kin                                           | pom kin maak                           |
 | 4   | รัก        | Love                                                       | rak                                           | pom rak khun                           |
 | 5   | คุณ        | You                                                        | Khun                                          | pom rak khun                           |
-| 6   | สวย        | Beautiful                                                  | suwaii                                        | pom suwaii                             |
+| 6   | สวย        | Beautiful                                                  | su-waii, suwaii                               | pom suwaii                             |
 | 7   | มาก        | A lot / much / many                                        | maak                                          | pom rak khum maak                      |
 | 8   | ฉี่        | Pee (normal)                                               | chi                                           | pom puat chi                           |
-| 9   | ปวด        | Pain                                                       | puat                                          | pom puat chi                           |
+| 9   | ปวด        | Pain                                                       | pu-at puat                                          | pom puat chi                           |
 | 10  | เจ็บ       | Hurt                                                       | cheb                                          | cheb                                   |
 | 11  | เจ็บ       | Pee (informal)                                             | yi (high note, but not super high) aww, yiaww | puat yiaww                             |
-| 12  | ปัสสาวะ    | Pee (super formal)                                         | passawa                                       | pom mi pan-ha kiaw-khab khaan pas-sawa |
+| 12  | ปัสสาวะ    | Pee (super formal)                                         | pas-sawa, passawa                                       | pom mi pan-ha kiaw-khab khaan pas-sawa |
 | 13  | มี         | Have                                                       | mi                                            | pom mi pan-ha kiaw-khab khan pas-sawa  |
 | 14  | ปัญหา      | Problem                                                    | pan-ha, panha                                 | pom mi pan-ha kiaw-khab khaan pas-sawa |
 | 15  | เกี่ยวกับ  | About                                                      | kiaw-khab, kiawkhab                           | pom mi pan-ha kiaw-khab khaan pas-sawa |
