@@ -14,6 +14,7 @@
 	<table>
 		<thead>
 			<tr>
+				<th>nr.</th>
 				{#each Object.keys(translations[0]) as key}
 					<th>{key}</th>
 				{/each}
@@ -22,6 +23,7 @@
 		<tbody>
 			{#each translations as translation, index}
 				<tr>
+					<td>{index + 1}</td>
 					{#each Object.values(translation) as value}
 						<td>{value}</td>
 					{/each}
