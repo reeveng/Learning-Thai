@@ -128,7 +128,7 @@ export const translations: TranslationType[] = [
 	},
 	{
 		thai: 'ขอบคุณ',
-		english: 'Thanks',
+		english: 'Thanks / thanks you',
 		pronounciation: 'khop-khun, khopkhun',
 		example: 'khop-khun nah krab'
 	},

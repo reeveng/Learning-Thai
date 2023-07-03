@@ -87,7 +87,7 @@
 	}
 
 	* {
-		@apply text-white;
+		@apply text-neutral-200;
 	}
 
 	tr {
