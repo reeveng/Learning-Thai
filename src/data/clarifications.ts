@@ -29,5 +29,14 @@ export const clarifications: ClarificationType[] = [
 		sentence: 'khop-khun nah krab',
 		explanation:
 			'Thank you, yes! => The "nah krab" is a way to come over more polite, you can add it to nearly any sentence and seem more polite / higher educated.'
+	},
+	{
+		sentence: 'pom khun su-waii maak',
+		explanation: 'Your hair is very beautiful'
 	}
 ];
+
+// ,{
+// 	sentence: '',
+// 	explanation: ''
+// }

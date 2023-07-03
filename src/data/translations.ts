@@ -19,6 +19,12 @@ export const translations: TranslationType[] = [
 		example: 'pom suwaii'
 	},
 	{
+		thai: 'ผม',
+		english: 'Hair',
+		pronounciation: 'pom',
+		example: 'pom khun suwaii maak'
+	},
+	{
 		thai: 'กิน',
 		english: 'Eat',
 		pronounciation: 'kin',
@@ -26,13 +32,13 @@ export const translations: TranslationType[] = [
 	},
 	{
 		thai: 'รัก',
-		english: 'love',
+		english: 'Love',
 		pronounciation: 'rak',
 		example: 'pom rak khun'
 	},
 	{
 		thai: 'คุณ',
-		english: 'you',
+		english: 'You',
 		pronounciation: 'khun',
 		example: 'pom rak khun'
 	},
@@ -134,9 +140,9 @@ export const translations: TranslationType[] = [
 	}
 ];
 
-// {
+// ,{
 // 	thai: '',
 // 	english: '',
 // 	pronounciation: '',
 // 	example: ''
-// },
+// }
