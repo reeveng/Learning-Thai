@@ -18,12 +18,18 @@
 
 	let maxHistoryLength = ABSOLUTE_MIN_AMOUNT_OF_HISTORY;
 
+	function nextTranslation() {
+		resetShowAnswer();
+
+		updateCurrentIndex();
+	}
+
 	function resetHistory() {
 		history = [];
 		localStorage.removeItem(HISTORY);
 		history = [...history]; // Reassign history to trigger UI update
 
-		resetShowAnswer();
+		nextTranslation();
 	}
 
 	function updateMaxHistory() {
@@ -69,12 +75,6 @@
 		history.unshift(currentIndex);
 		localStorage.setItem(HISTORY, JSON.stringify(history));
 		history = [...history]; // Reassign history to trigger UI update
-	}
-
-	function nextTranslation() {
-		resetShowAnswer();
-
-		updateCurrentIndex();
 	}
 
 	function previousTranslation() {
@@ -138,7 +138,7 @@
 					<label for="resetHistory" class="text-sm font-bold text-neutral-700">
 						Would you like to reset your history?
 					</label>
-					<button id="resetHistory" on:click={resetHistory}>Reset</button>
+					<button id="resetHistory" on:click={resetHistory()}>Reset</button>
 				</div>
 			</div>
 		{/if}
@@ -168,16 +168,25 @@
 		<p>Loading...</p>
 	{/if}
 
-	<div>
+	<div class="w-full flex gap-10 flex-col">
 		<h2 class="text-center">History</h2>
-		{#if history.length === 0}
+		{#if history.length <= 1}
 			<p>No history yet.</p>
 		{:else}
-			<ul class="p-0 m-0">
+			<table class="p-0 m-0">
+				<tr>
+					{#each OPTIONS.filter((i) => i != displayOption) as option}
+						<th class="px-6 py-4">{titlize(option)}</th>
+					{/each}
+				</tr>
 				{#each history.slice(1) as item (item)}
-					<li>{translations[item].thai} - {translations[item].english}</li>
+					<tr>
+						{#each OPTIONS.filter((i) => i != displayOption) as option}
+							<td class="px-6 py-4">{translations[item][option]}</td>
+						{/each}
+					</tr>
 				{/each}
-			</ul>
+			</table>
 		{/if}
 	</div>
 </main>
@@ -246,5 +255,25 @@
 
 	option {
 		@apply text-neutral-800 select-none cursor-default hover:bg-neutral-600;
+	}
+
+	tr:nth-child(even) {
+		@apply bg-black;
+	}
+
+	tr {
+		@apply border-neutral-600 border-b-4;
+	}
+
+	tr:last-of-type {
+		@apply border-none;
+	}
+
+	th {
+		@apply font-bold text-xl bg-neutral-600;
+	}
+
+	table {
+		@apply table-auto rounded-lg overflow-hidden mb-10 border-neutral-600;
 	}
 </style>
