@@ -199,8 +199,9 @@
 
 	h1 {
 		@apply font-bold text-xl md:text-5xl;
-		font-family: 'Press Start 2P', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-			Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		font-family: 'Press Start 2P', 'JetBrains Mono', monospace, system-ui, -apple-system,
+			BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+			'Helvetica Neue', sans-serif;
 	}
 
 	h2 {
@@ -245,10 +246,5 @@
 
 	option {
 		@apply text-neutral-800 select-none cursor-default hover:bg-neutral-600;
-	}
-
-	:global(html),
-	:global(body) {
-		@apply bg-neutral-900 w-full h-full m-0 p-0;
 	}
 </style>

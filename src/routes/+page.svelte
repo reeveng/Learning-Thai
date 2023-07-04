@@ -75,7 +75,7 @@
 </main>
 
 <style lang="postcss">
-	@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700;1,800&family=Press+Start+2P&display=swap');
 
 	main {
 		@apply flex items-center justify-center flex-col gap-10 pb-10;
@@ -107,8 +107,9 @@
 
 	h1 {
 		@apply font-bold text-xl md:text-5xl;
-		font-family: 'Press Start 2P', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-			Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		font-family: 'Press Start 2P', 'JetBrains Mono', monospace, system-ui, -apple-system,
+			BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+			'Helvetica Neue', sans-serif;
 	}
 
 	h2 {
@@ -122,10 +123,5 @@
 
 	tr:nth-child(even) {
 		@apply bg-black;
-	}
-
-	:global(html),
-	:global(body) {
-		@apply bg-neutral-900 w-full h-full m-0 p-0;
 	}
 </style>
