@@ -82,7 +82,11 @@
 
 		const previousIndex = history[1]; // Get the second item from history since the first is the current translation
 		if (previousIndex !== undefined) {
+			history.shift(); // Remove the item at index 1
+			const previousIndex = history[0]; // Get the new second item from history
 			currentIndex = previousIndex;
+
+			history = [...history];
 		}
 	}
 
@@ -138,7 +142,7 @@
 					<label for="resetHistory" class="text-sm font-bold text-neutral-700">
 						Would you like to reset your history?
 					</label>
-					<button id="resetHistory" on:click={resetHistory()}>Reset</button>
+					<button id="resetHistory" on:click={resetHistory}>Reset</button>
 				</div>
 			</div>
 		{/if}
