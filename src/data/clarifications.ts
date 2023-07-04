@@ -42,7 +42,7 @@ export const clarifications: ClarificationType[] = [
 	{
 		sentence: 'rak pom, mai?',
 		explanation:
-			'love me, right/not? => "mai" is used here to ask a question, when "mai" comes at the end, most of the time it means someone is asking something.'
+			'love me, right/not? => do you love me? => "mai" is used here to ask a question, when "mai" comes at the end, most of the time it means someone is asking something.'
 	}
 ];
 
