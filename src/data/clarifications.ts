@@ -37,7 +37,7 @@ export const clarifications: ClarificationType[] = [
 	{
 		sentence: 'tam araii yu?',
 		explanation:
-			'What are you doing? => yu, means "at the moment"/"currently"/"in the present", in English "-ing" is added to represent an action that is currently going on.'
+			'What are you doing? => yu, means "at the moment" / "currently" / "in the present", in English "-ing" is added to represent an action that is currently going on.'
 	},
 	{
 		sentence: 'rak pom, mai?',
