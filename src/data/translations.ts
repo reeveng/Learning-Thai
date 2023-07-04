@@ -155,6 +155,12 @@ export const translations: TranslationType[] = [
 		english: 'Live / present / currently',
 		pronounciation: 'yu',
 		example: 'tam araii yu?'
+	},
+	{
+		thai: 'มั้ย',
+		english: 'Right',
+		pronounciation: 'mai',
+		example: 'rak pom, mai?'
 	}
 ];
 

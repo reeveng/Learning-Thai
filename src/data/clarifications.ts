@@ -11,11 +11,11 @@ export type ExtendedClarificationType = ClarificationType & {
 export const clarifications: ClarificationType[] = [
 	{
 		sentence: 'pom puat chi',
-		explanation: 'I pain pee, means I need to pee'
+		explanation: 'I pain pee, means I need to pee.'
 	},
 	{
 		sentence: 'pom kin mangsaweerat',
-		explanation: 'I eat vegan, means I am vegan'
+		explanation: 'I eat vegan, means I am vegan.'
 	},
 	{
 		sentence: 'cheb',
@@ -23,7 +23,7 @@ export const clarifications: ClarificationType[] = [
 	},
 	{
 		sentence: 'pom mi pan-ha kiaw-khab khaan pas-sawa',
-		explanation: 'I have a urinary problem'
+		explanation: 'I have a urinary problem.'
 	},
 	{
 		sentence: 'khop-khun nah krab',
@@ -32,11 +32,17 @@ export const clarifications: ClarificationType[] = [
 	},
 	{
 		sentence: 'pom khun su-waii maak',
-		explanation: 'Your hair is very beautiful'
+		explanation: 'Your hair is very beautiful.'
 	},
 	{
 		sentence: 'tam araii yu?',
-		explanation: 'What are you doing? => yu, means "at the moment"/"currently"/"in the present", in English "-ing" is added to represent an action that is currently going on.'
+		explanation:
+			'What are you doing? => yu, means "at the moment"/"currently"/"in the present", in English "-ing" is added to represent an action that is currently going on.'
+	},
+	{
+		sentence: 'rak pom, mai?',
+		explanation:
+			'love me, right/not? => "mai" is used here to ask a question, when "mai" comes at the end, most of the time it means someone is asking something.'
 	}
 ];
 
