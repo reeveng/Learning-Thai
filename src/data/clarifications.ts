@@ -19,7 +19,7 @@ export const clarifications: ClarificationType[] = [
 	},
 	{
 		sentence: 'cheb',
-		explanation: 'Hurt, means I am hurting, it hurts, ...'
+		explanation: 'Hurt => means I am hurting, it hurts, ...'
 	},
 	{
 		sentence: 'pom mi pan-ha kiaw-khab khaan pas-sawa',
@@ -36,7 +36,7 @@ export const clarifications: ClarificationType[] = [
 	},
 	{
 		sentence: 'tam araii yu?',
-		explanation: 'What are you doing? -> yu, means "at the moment"/"currently"/"in the present"'
+		explanation: 'What are you doing? => yu, means "at the moment"/"currently"/"in the present", in English "-ing" is added to represent an action that is currently going on.'
 	}
 ];
 
