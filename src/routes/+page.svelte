@@ -5,6 +5,7 @@
 	import { titlize } from '$utils/titlize';
 	import { addOccurancesToClarification } from './helper';
 	import { humanReadableIndex } from '$utils/humanReadableIndex';
+	import Header from '$components/Header.svelte';
 
 	const extendedClarifications: ExtendedClarificationType[] = addOccurancesToClarification(
 		clarifications,
@@ -13,6 +14,8 @@
 </script>
 
 <main>
+	<Header />
+
 	<h1>Learning Thai</h1>
 
 	<p>
@@ -122,6 +125,6 @@
 	}
 
 	:global(html) {
-		@apply bg-neutral-900;
+		@apply bg-neutral-900 w-full h-full m-0 p-0;
 	}
 </style>

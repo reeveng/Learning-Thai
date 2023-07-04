@@ -18,7 +18,8 @@ const config = {
 			$config: 'src/config',
 			$models: 'src/models',
 			$stores: 'src/stores',
-			$data: 'src/data'
+			$data: 'src/data',
+			$constants: 'src/constants'
 		}
 	}
 };

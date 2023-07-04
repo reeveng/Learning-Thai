@@ -2,13 +2,16 @@
 	import { translations, type TranslationType } from '$data/translations';
 	import { titlize } from '$utils/titlize';
 	import { onMount } from 'svelte';
+	import { HISTORY } from '$constants/localStorage';
+	import Header from '$components/Header.svelte';
 
 	type DisplayOption = keyof TranslationType;
 
-	const OPTIONS: DisplayOption[] = ['pronounciation', 'english', 'thai'];
+	const OPTIONS: DisplayOption[] = ['english', 'pronounciation', 'thai'];
 
 	let displayOption = OPTIONS[0];
 	let showAnswer = false;
+	let showSettings = false;
 	let currentIndex = -1;
 	let history: number[] = [];
 
@@ -16,7 +19,7 @@
 
 	onMount(() => {
 		// Load history from local storage
-		const storedHistory = localStorage.getItem('history');
+		const storedHistory = localStorage.getItem(HISTORY);
 		if (storedHistory) {
 			history = JSON.parse(storedHistory);
 		}
@@ -44,7 +47,7 @@
 			history.pop();
 		}
 		history.unshift(currentIndex);
-		localStorage.setItem('history', JSON.stringify(history));
+		localStorage.setItem(HISTORY, JSON.stringify(history));
 		history = [...history]; // Reassign history to trigger UI update
 	}
 
@@ -65,33 +68,45 @@
 
 	function resetHistory() {
 		history = [];
-		localStorage.removeItem('history');
+		localStorage.removeItem(HISTORY);
 		history = [...history]; // Reassign history to trigger UI update
 
 		resetShowAnswer();
 	}
 
-	function toggle() {
+	function toggleAnswer() {
 		showAnswer = !showAnswer;
+	}
+	function toggleSettings() {
+		showSettings = !showSettings;
 	}
 </script>
 
 <main>
+	<Header />
+
 	<h1>Translation Display</h1>
+
 	<div>
-		<h2>Display Option</h2>
-		<select bind:value={displayOption}>
-			{#each OPTIONS as option}
-				<option value={option}>{titlize(option)}</option>
-			{/each}
-		</select>
+		<button on:click={toggleSettings}>{showSettings ? 'Hide' : 'Show'} settings</button>
+		{#if showSettings}
+			<div>
+				<label for="displayOption" class="text-sm font-medium text-gray-700">Display Option</label>
+				<select id="displayOption" bind:value={displayOption} class="">
+					{#each OPTIONS as option}
+						<option value={option}>{titlize(option)}</option>
+					{/each}
+				</select>
+			</div>
+		{/if}
 	</div>
 
 	{#if currentIndex !== -1}
-		<div class="translation-container">
+		<div class="card">
 			<p>{translations[currentIndex][displayOption]}</p>
 
 			{#if showAnswer}
+				<h3>Answer</h3>
 				<ul>
 					{#each OPTIONS as itemToShow}
 						{#if itemToShow !== displayOption}
@@ -101,14 +116,15 @@
 				</ul>
 			{/if}
 		</div>
-		<div class="flex gap-2">
+		<div class="flex gap-5">
 			<button on:click={previousTranslation} disabled={history.length < 2}>Previous</button>
-			<button on:click={toggle}>Show</button>
+			<button on:click={toggleAnswer}>{showAnswer ? 'Hide' : 'Show'}</button>
 			<button on:click={nextTranslation}>Next</button>
 		</div>
 	{:else}
 		<p>Loading...</p>
 	{/if}
+
 	<div>
 		<h2>History</h2>
 		{#if history.length === 0}
@@ -125,11 +141,49 @@
 </main>
 
 <style lang="postcss">
+	@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+	main {
+		@apply flex items-center justify-center flex-col gap-10;
+	}
+
+	main > * {
+		max-width: 67%;
+	}
+
 	* {
 		@apply text-neutral-200;
 	}
 
+	h1 {
+		@apply font-bold text-xl md:text-5xl;
+		font-family: 'Press Start 2P', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+			Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	}
+
+	h2 {
+		@apply font-bold text-lg md:text-3xl;
+	}
+
+	h1,
+	h2 {
+		@apply mt-20;
+	}
+
+	button {
+		@apply bg-neutral-800 border-4 border-yellow-500 text-yellow-500 hover:bg-neutral-600 hover:outline-2 outline-black rounded-full p-2;
+	}
+
+	.card {
+		@apply bg-neutral-800 rounded w-full flex flex-col items-center p-4;
+		min-height: 15rem;
+	}
+
+	.card ul {
+		@apply p-0 m-0;
+	}
+
 	:global(html) {
-		@apply bg-neutral-900;
+		@apply bg-neutral-900 w-full h-full m-0 p-0;
 	}
 </style>
