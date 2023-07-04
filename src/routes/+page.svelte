@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { translations } from '$data/translations';
 	import { clarifications, type ExtendedClarificationType } from '$data/clarifications';
-	import '../app.css';
+
 	import { titlize } from '$utils/titlize';
 	import { addOccurancesToClarification } from './helper';
 	import { humanReadableIndex } from '$utils/humanReadableIndex';
@@ -78,7 +78,7 @@
 	@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 	main {
-		@apply flex items-center justify-center flex-col gap-10;
+		@apply flex items-center justify-center flex-col gap-10 pb-10;
 	}
 
 	main > * {
@@ -86,7 +86,7 @@
 	}
 
 	table {
-		@apply table-auto rounded-lg overflow-hidden shadow-md mb-10;
+		@apply table-auto rounded-lg overflow-hidden mb-10 border-neutral-600;
 	}
 
 	* {
@@ -124,7 +124,8 @@
 		@apply bg-black;
 	}
 
-	:global(html) {
+	:global(html),
+	:global(body) {
 		@apply bg-neutral-900 w-full h-full m-0 p-0;
 	}
 </style>

@@ -18,9 +18,9 @@
 	</nav>
 </header>
 
-<style>
+<style lang="postcss">
 	header {
-		@apply bg-neutral-950 p-5 w-full flex items-center justify-center;
+		@apply bg-neutral-950 m-0 py-5 w-full flex items-center justify-center;
 	}
 
 	nav ul {
@@ -28,10 +28,6 @@
 	}
 
 	nav ul li a {
-		@apply text-white no-underline font-bold;
-	}
-
-	nav ul li a:hover {
-		@apply text-yellow-500 underline;
+		@apply text-white no-underline font-bold hover:text-yellow-500 hover:underline;
 	}
 </style>

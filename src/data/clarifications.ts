@@ -33,6 +33,10 @@ export const clarifications: ClarificationType[] = [
 	{
 		sentence: 'pom khun su-waii maak',
 		explanation: 'Your hair is very beautiful'
+	},
+	{
+		sentence: 'tam araii yu?',
+		explanation: 'What are you doing? -> yu, means "at the moment"/"currently"/"in the present"'
 	}
 ];
 

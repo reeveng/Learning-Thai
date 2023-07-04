@@ -137,6 +137,24 @@ export const translations: TranslationType[] = [
 		english: 'Enforces Yes (expresses a deeper yes)',
 		pronounciation: 'nah',
 		example: 'khop-khun nah krab'
+	},
+	{
+		thai: 'ทำ',
+		english: 'Do',
+		pronounciation: 'tam',
+		example: 'tam araii yu?'
+	},
+	{
+		thai: 'อะไร',
+		english: 'What',
+		pronounciation: 'a-raii, araii',
+		example: 'tam araii yu?'
+	},
+	{
+		thai: 'อยู่',
+		english: 'Live / present / currently',
+		pronounciation: 'yu',
+		example: 'tam araii yu?'
 	}
 ];
 
