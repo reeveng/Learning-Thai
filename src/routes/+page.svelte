@@ -5,7 +5,6 @@
 	import { titlize } from '$utils/titlize';
 	import { addOccurancesToClarification } from './helper';
 	import { humanReadableIndex } from '$utils/humanReadableIndex';
-	import Header from '$components/Header.svelte';
 
 	const extendedClarifications: ExtendedClarificationType[] = addOccurancesToClarification(
 		clarifications,
@@ -14,8 +13,6 @@
 </script>
 
 <main>
-	<Header />
-
 	<h1>Learning Thai</h1>
 
 	<p>

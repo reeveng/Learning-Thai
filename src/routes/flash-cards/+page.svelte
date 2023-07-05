@@ -99,8 +99,6 @@
 </script>
 
 <main>
-	<Header />
-
 	<h1>Translation Display</h1>
 
 	<div class="settings-container">

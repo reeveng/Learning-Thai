@@ -18,6 +18,7 @@ const config = {
 			$config: 'src/config',
 			$models: 'src/models',
 			$stores: 'src/stores',
+			$assets: 'src/assets',
 			$data: 'src/data',
 			$constants: 'src/constants'
 		}
