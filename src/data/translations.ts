@@ -161,6 +161,18 @@ export const translations: TranslationType[] = [
 		english: 'Right',
 		pronounciation: 'mai',
 		example: 'rak pom, mai?'
+	},
+	{
+		thai: 'ไก่',
+		english: 'Chicken',
+		pronounciation: 'kai',
+		example: 'kin kai'
+	},
+	{
+		thai: 'ข้าว',
+		english: 'Rice',
+		pronounciation: 'Khaw',
+		example: 'kin khaw'
 	}
 ];
 

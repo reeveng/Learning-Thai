@@ -43,9 +43,13 @@ export const clarifications: ClarificationType[] = [
 		sentence: 'rak pom, mai?',
 		explanation:
 			'love me, right/not? => do you love me? => "mai" is used here to ask a question, when "mai" comes at the end, most of the time it means someone is asking something.'
+	},
+	{
+		sentence: 'kin khaw',
+		explanation:
+			'eat rice => eat a meal => in Thai, since rice is a common phenomenon, they use "eat rice" as "eat a meal"'
 	}
 ];
-
 // ,{
 // 	sentence: '',
 // 	explanation: ''
