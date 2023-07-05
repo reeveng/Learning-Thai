@@ -3,7 +3,6 @@
 	import { titlize } from '$utils/titlize';
 	import { onMount } from 'svelte';
 	import { HISTORY, MAX_HISTORY } from '$constants/localStorage';
-	import Header from '$components/Header.svelte';
 
 	type DisplayOption = keyof TranslationType;
 
@@ -98,139 +97,106 @@
 	}
 </script>
 
-<main>
-	<h1>Translation Display</h1>
+<!-- Start of file -->
 
-	<div class="settings-container">
-		<button on:click={toggleSettings}>{showSettings ? 'Hide' : 'Show'} settings</button>
+<h1>Flash cards</h1>
 
-		{#if showSettings}
-			<div class="card settings">
-				<div class="settings-item">
-					<label for="displayOption" class="text-sm font-bold text-neutral-700">
-						What do you want to practice?
-					</label>
-					<select id="displayOption" bind:value={displayOption} class="">
-						{#each OPTIONS as option}
-							<option value={option}>{titlize(option)}</option>
-						{/each}
-					</select>
-				</div>
+<div class="settings-container">
+	<button on:click={toggleSettings}>{showSettings ? 'Hide' : 'Show'} settings</button>
 
-				<div class="settings-item">
-					<label for="displayOption" class="text-sm font-bold text-neutral-700">
-						The word needs to be encountered {maxHistoryLength} times before it can be shown again.
-						<br />
-						How often would you want a word to return {`(min: ${ABSOLUTE_MIN_AMOUNT_OF_HISTORY}, max: ${
-							translations.length - ABSOLUTE_MIN_AMOUNT_OF_HISTORY
-						})`}?
-					</label>
-					<input
-						bind:value={maxHistoryLength}
-						min={ABSOLUTE_MIN_AMOUNT_OF_HISTORY}
-						max={translations.length - ABSOLUTE_MIN_AMOUNT_OF_HISTORY}
-						type="number"
-						class="bg-neutral-900 text-white border border-neutral-700 focus:outline-none focus:border-neutral-400 px-4 py-2 rounded-md"
-						pattern="[0-9]+"
-						on:change={updateMaxHistory}
-					/>
-				</div>
-
-				<div class="settings-item">
-					<label for="resetHistory" class="text-sm font-bold text-neutral-700">
-						Would you like to reset your history?
-					</label>
-					<button id="resetHistory" on:click={resetHistory}>Reset</button>
-				</div>
+	{#if showSettings}
+		<div class="card settings">
+			<div class="settings-item">
+				<label for="displayOption" class="text-sm font-bold text-neutral-400">
+					What do you want to practice?
+				</label>
+				<select id="displayOption" bind:value={displayOption} class="">
+					{#each OPTIONS as option}
+						<option value={option}>{titlize(option)}</option>
+					{/each}
+				</select>
 			</div>
+
+			<div class="settings-item">
+				<label for="displayOption" class="text-sm font-bold text-neutral-400">
+					The word needs to be encountered {maxHistoryLength} times before it can be shown again.
+					<br />
+					How often would you want a word to return {`(min: ${ABSOLUTE_MIN_AMOUNT_OF_HISTORY}, max: ${
+						translations.length - ABSOLUTE_MIN_AMOUNT_OF_HISTORY
+					})`}?
+				</label>
+				<input
+					bind:value={maxHistoryLength}
+					min={ABSOLUTE_MIN_AMOUNT_OF_HISTORY}
+					max={translations.length - ABSOLUTE_MIN_AMOUNT_OF_HISTORY}
+					type="number"
+					class="bg-neutral-900 text-white border border-neutral-700 focus:outline-none focus:border-neutral-400 px-4 py-2 rounded-md"
+					pattern="[0-9]+"
+					on:change={updateMaxHistory}
+				/>
+			</div>
+
+			<div class="settings-item">
+				<label for="resetHistory" class="text-sm font-bold text-neutral-400">
+					Would you like to reset your history?
+				</label>
+				<button id="resetHistory" on:click={resetHistory}>Reset</button>
+			</div>
+		</div>
+	{/if}
+</div>
+
+{#if currentIndex !== -1}
+	<div class="card">
+		<p>{translations[currentIndex][displayOption]}</p>
+
+		{#if showAnswer}
+			<h3 class="font-bold text-lg mt-5">Answer</h3>
+			<ul class="list-inside list-disc">
+				{#each OPTIONS as itemToShow}
+					{#if itemToShow !== displayOption}
+						<li>{translations[currentIndex][itemToShow]}</li>
+					{/if}
+				{/each}
+			</ul>
 		{/if}
 	</div>
+	<div class="button-toolbar">
+		<button on:click={previousTranslation} disabled={history.length < 2}>Previous</button>
+		<button on:click={toggleAnswer}>{showAnswer ? 'Hide' : 'Show'}</button>
+		<button on:click={nextTranslation}>Next</button>
+	</div>
+{:else}
+	<p>Loading...</p>
+{/if}
 
-	{#if currentIndex !== -1}
-		<div class="card">
-			<p>{translations[currentIndex][displayOption]}</p>
-
-			{#if showAnswer}
-				<h3 class="font-bold text-lg mt-5">Answer</h3>
-				<ul class="list-inside list-disc">
-					{#each OPTIONS as itemToShow}
-						{#if itemToShow !== displayOption}
-							<li>{translations[currentIndex][itemToShow]}</li>
-						{/if}
-					{/each}
-				</ul>
-			{/if}
-		</div>
-		<div class="button-toolbar">
-			<button on:click={previousTranslation} disabled={history.length < 2}>Previous</button>
-			<button on:click={toggleAnswer}>{showAnswer ? 'Hide' : 'Show'}</button>
-			<button on:click={nextTranslation}>Next</button>
-		</div>
+<div class="w-full flex gap-10 flex-col">
+	<h2 class="text-center">History</h2>
+	{#if history.length <= 1}
+		<p>No history yet.</p>
 	{:else}
-		<p>Loading...</p>
-	{/if}
-
-	<div class="w-full flex gap-10 flex-col">
-		<h2 class="text-center">History</h2>
-		{#if history.length <= 1}
-			<p>No history yet.</p>
-		{:else}
-			<table class="p-0 m-0">
+		<table class="p-0 m-0">
+			<tr>
+				{#each OPTIONS.filter((i) => i != displayOption) as option}
+					<th class="px-6 py-4">{titlize(option)}</th>
+				{/each}
+			</tr>
+			{#each history.slice(1) as item (item)}
 				<tr>
 					{#each OPTIONS.filter((i) => i != displayOption) as option}
-						<th class="px-6 py-4">{titlize(option)}</th>
+						<td class="px-6 py-4">{translations[item][option]}</td>
 					{/each}
 				</tr>
-				{#each history.slice(1) as item (item)}
-					<tr>
-						{#each OPTIONS.filter((i) => i != displayOption) as option}
-							<td class="px-6 py-4">{translations[item][option]}</td>
-						{/each}
-					</tr>
-				{/each}
-			</table>
-		{/if}
-	</div>
-</main>
+			{/each}
+		</table>
+	{/if}
+</div>
+
+<!-- End of file -->
 
 <style lang="postcss">
-	@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-	main {
-		@apply flex items-center justify-center flex-col gap-10 pb-10;
-	}
-
-	main > * {
-		max-width: 67%;
-	}
-
-	* {
-		@apply text-neutral-200;
-	}
-
-	h1 {
-		@apply font-bold text-xl md:text-5xl;
-		font-family: 'Press Start 2P', 'JetBrains Mono', monospace, system-ui, -apple-system,
-			BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-			'Helvetica Neue', sans-serif;
-	}
-
-	h2 {
-		@apply font-bold text-lg md:text-3xl;
-	}
-
-	h1,
-	h2 {
-		@apply mt-20;
-	}
-
 	.settings-item {
 		@apply flex gap-4 flex-col w-full justify-center;
-	}
-
-	button {
-		@apply bg-neutral-800 border-4 border-yellow-500 text-yellow-500 hover:bg-neutral-600 rounded-full p-2 text-center;
-		min-width: 150px;
 	}
 
 	.button-toolbar {
@@ -257,25 +223,5 @@
 
 	option {
 		@apply text-neutral-800 select-none cursor-default hover:bg-neutral-600;
-	}
-
-	tr:nth-child(even) {
-		@apply bg-black;
-	}
-
-	tr {
-		@apply border-neutral-600 border-b-4;
-	}
-
-	tr:last-of-type {
-		@apply border-none;
-	}
-
-	th {
-		@apply font-bold text-xl bg-neutral-600;
-	}
-
-	table {
-		@apply table-auto rounded-lg overflow-hidden mb-10 border-neutral-600;
 	}
 </style>

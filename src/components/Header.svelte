@@ -1,8 +1,9 @@
 <script>
+	import { URLS } from '$constants/urls';
 	import { titlize } from '$utils/titlize';
 	const headerItems = [
-		{ name: 'Home', url: '/' },
-		{ name: 'Flash Cards', url: '/flash-cards' }
+		{ name: 'Home', url: URLS.ROOT },
+		{ name: 'Flash Cards', url: URLS.FLASH_CARDS }
 	];
 </script>
 

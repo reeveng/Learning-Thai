@@ -5,6 +5,7 @@
 	import { titlize } from '$utils/titlize';
 	import { addOccurancesToClarification } from './helper';
 	import { humanReadableIndex } from '$utils/humanReadableIndex';
+	import { URLS } from '$constants/urls';
 
 	const extendedClarifications: ExtendedClarificationType[] = addOccurancesToClarification(
 		clarifications,
@@ -12,113 +13,79 @@
 	);
 </script>
 
-<main>
-	<h1>Learning Thai</h1>
+<!-- Start of file -->
 
+<h1>Learning Thai</h1>
+
+<p class="w-full text-left">
+	It's my intention to every day learn some Thai words. I'll write them down, try to form sentences
+	with them that make sense to a native Thai speaker, maybe eventually I'll understand the writing
+	system too, when I compare the written words and their pronounciations 👍.
+</p>
+
+<section class="w-full text-left text-xs">
 	<p>
-		It's my intention to every day learn some Thai words. I'll write them down, try to form
-		sentences with them that make sense to a native Thai speaker, maybe eventually I'll understand
-		the writing system too, when I compare the written words and their pronounciations 👍.
+		Do you want an interactive way to learn the words in the table below?
+		<a href={URLS.FLASH_CARDS}>
+			<button>Check out the flash cards!</button>
+		</a>
 	</p>
 
-	<table>
-		<thead>
-			<tr>
-				<th aria-hidden="true" />
-				{#each Object.keys(translations[0]) as key}
-					<th scope="col" class="px-6 py-4">{titlize(key)}</th>
-				{/each}
-			</tr>
-		</thead>
-		<tbody>
-			{#each translations as translation, index}
-				<tr>
-					<td aria-hidden="true" class="text-center px-6 py-4 font-bold bg-neutral-600">
-						{humanReadableIndex(index)}
-					</td>
-					{#each Object.values(translation) as value}
-						<td class="px-6 py-4">{value}</td>
-					{/each}
-				</tr>
-			{/each}
-		</tbody>
-	</table>
-
-	<h2>Clarifications</h2>
-
 	<p>
-		Explaining certain sentences a bit more, since languages can be confusing and not everything is
-		directly translatable.
+		Do you want to learn the individual Thai letters?
+		<a href={URLS.ALPHABET}>
+			<button>Check out the full alphabet!</button>
+		</a>
 	</p>
+</section>
 
-	<table>
-		<thead>
+<table>
+	<thead>
+		<tr>
+			<th aria-hidden="true" />
+			{#each Object.keys(translations[0]) as key}
+				<th scope="col" class="px-6 py-4">{titlize(key)}</th>
+			{/each}
+		</tr>
+	</thead>
+	<tbody>
+		{#each translations as translation, index}
 			<tr>
-				{#each Object.keys(extendedClarifications[0]) as key}
-					<th class="px-6 py-4">{titlize(key)}</th>
+				<td aria-hidden="true" class="text-center px-6 py-4 font-bold bg-neutral-600">
+					{humanReadableIndex(index)}
+				</td>
+				{#each Object.values(translation) as value}
+					<td class="px-6 py-4">{value}</td>
 				{/each}
 			</tr>
-		</thead>
-		<tbody>
-			{#each extendedClarifications as clarification}
-				<tr>
-					{#each Object.values(clarification) as value}
-						<td class="px-6 py-4">{value}</td>
-					{/each}
-				</tr>
+		{/each}
+	</tbody>
+</table>
+
+<h2>Clarifications</h2>
+
+<p>
+	Explaining certain sentences a bit more, since languages can be confusing and not everything is
+	directly translatable.
+</p>
+
+<table>
+	<thead>
+		<tr>
+			{#each Object.keys(extendedClarifications[0]) as key}
+				<th class="px-6 py-4">{titlize(key)}</th>
 			{/each}
-		</tbody>
-	</table>
-</main>
+		</tr>
+	</thead>
+	<tbody>
+		{#each extendedClarifications as clarification}
+			<tr>
+				{#each Object.values(clarification) as value}
+					<td class="px-6 py-4">{value}</td>
+				{/each}
+			</tr>
+		{/each}
+	</tbody>
+</table>
 
-<style lang="postcss">
-	@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700;1,800&family=Press+Start+2P&display=swap');
-
-	main {
-		@apply flex items-center justify-center flex-col gap-10 pb-10;
-	}
-
-	main > * {
-		max-width: 67%;
-	}
-
-	table {
-		@apply table-auto rounded-lg overflow-hidden mb-10 border-neutral-600;
-	}
-
-	* {
-		@apply text-neutral-200;
-	}
-
-	tr {
-		@apply border-neutral-600 border-b-4;
-	}
-
-	tr:last-of-type {
-		@apply border-none;
-	}
-
-	th {
-		@apply font-bold text-xl bg-neutral-600;
-	}
-
-	h1 {
-		@apply font-bold text-xl md:text-5xl;
-		font-family: 'Press Start 2P', 'JetBrains Mono', monospace, system-ui, -apple-system,
-			BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-			'Helvetica Neue', sans-serif;
-	}
-
-	h2 {
-		@apply font-bold text-lg md:text-3xl;
-	}
-
-	h1,
-	h2 {
-		@apply mt-20;
-	}
-
-	tr:nth-child(even) {
-		@apply bg-black;
-	}
-</style>
+<!-- End of file -->
