@@ -173,6 +173,18 @@ export const translations: TranslationType[] = [
 		english: 'Rice',
 		pronounciation: 'Khaw',
 		example: 'kin khaw'
+	},
+	{
+		thai: 'กล้วย',
+		english: 'Banana',
+		pronounciation: 'glu-waii, gluwaii',
+		example: 'pom choob kin gluwaii'
+	},
+	{
+		thai: 'ชอบ',
+		english: 'Like',
+		pronounciation: 'choob',
+		example: 'pom choob kin gluwaii'
 	}
 ];
 
