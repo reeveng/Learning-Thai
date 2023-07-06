@@ -185,6 +185,18 @@ export const translations: TranslationType[] = [
 		english: 'Like',
 		pronounciation: 'choob',
 		example: 'pom choob kin gluwaii'
+	},
+	{
+		thai: 'ดู',
+		english: 'watch / see',
+		pronounciation: 'do',
+		example: 'pom do nang yu'
+	},
+	{
+		thai: 'หนัง',
+		english: 'Movie',
+		pronounciation: 'nang',
+		example: 'pom do nang yu'
 	}
 ];
 
