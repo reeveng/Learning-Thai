@@ -15,6 +15,10 @@
 
 <!-- Start of file -->
 
+<svelte:head>
+	<title>Words and sentences | Learning Thai</title>
+</svelte:head>
+
 <h1>Learning Thai</h1>
 
 <p class="w-full text-left">

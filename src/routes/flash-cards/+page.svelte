@@ -99,6 +99,10 @@
 
 <!-- Start of file -->
 
+<svelte:head>
+	<title>Flash cards | Learning Thai</title>
+</svelte:head>
+
 <h1>Flash cards</h1>
 
 <div class="settings-container">
