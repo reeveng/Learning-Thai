@@ -197,6 +197,24 @@ export const translations: TranslationType[] = [
 		english: 'Movie',
 		pronounciation: 'nang',
 		example: 'pom do nang yu'
+	},
+	{
+		thai: 'จะ',
+		english: 'Will / shall',
+		pronounciation: 'tja',
+		example: 'tja pai nai'
+	},
+	{
+		thai: 'ไป',
+		english: 'Go',
+		pronounciation: 'pai',
+		example: 'tja pai nai'
+	},
+	{
+		thai: 'ไหน',
+		english: 'Where',
+		pronounciation: 'nai',
+		example: 'tja pai nai'
 	}
 ];
 
