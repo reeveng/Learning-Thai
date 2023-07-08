@@ -215,6 +215,24 @@ export const translations: TranslationType[] = [
 		english: 'Where',
 		pronounciation: 'nai',
 		example: 'tja pai nai'
+	},
+	{
+		thai: 'อยาก',
+		english: 'Want',
+		pronounciation: 'jaak',
+		example: 'pom jaak duuum naam'
+	},
+	{
+		thai: 'ดื่ม',
+		english: 'Drink',
+		pronounciation: 'duuum',
+		example: 'pom jaak duuum naam'
+	},
+	{
+		thai: 'น้ำ',
+		english: 'Water',
+		pronounciation: 'naam',
+		example: 'pom jaak duuum naam'
 	}
 ];
 
