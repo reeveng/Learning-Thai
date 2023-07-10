@@ -12,9 +12,12 @@ export const addOccurancesToClarification = (
 	// Iterate over the sorted clarifications and add translation information
 	extendedClarifications.forEach((clarification) => {
 		const sentence = removeNonLetters(clarification.sentence);
-		const matchingTranslations = translations.filter(
-			(translation) => removeNonLetters(translation.example) === sentence
-		);
+		const matchingTranslations = translations.filter((translation) => {
+			const exampleSentence = removeNonLetters(translation.example).toLowerCase();
+			const stringToClarify = sentence.toLowerCase();
+
+			return exampleSentence.includes(stringToClarify);
+		});
 		const translationIndexes = matchingTranslations.map((translation) =>
 			humanReadableIndex(translations.indexOf(translation))
 		);

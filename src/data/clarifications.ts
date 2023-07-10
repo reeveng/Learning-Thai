@@ -46,8 +46,11 @@ export const clarifications: ClarificationType[] = [
 	},
 	{
 		sentence: 'kin khaw',
-		explanation:
-			'eat rice => eat a meal => in Thai, since rice is a common phenomenon, they use "eat rice" as "eat a meal"'
+		explanation: `eat rice => eat a meal => in Thai, since rice is a common phenomenon, they use "eat rice" as "eat a meal" / "lets eat" / "eat breakfast" / "eat lunch" / "eat dinner" => sort of used instead of "eat" in general, but only main meals and doesn't apply to snacks, desert, ...`
+	},
+	{
+		sentence: 'kin khaw ma ruuuwe yang',
+		explanation: 'Eat rice come or yet? => Did you eat before coming here?'
 	}
 ];
 // ,{

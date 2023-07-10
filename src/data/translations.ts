@@ -233,6 +233,36 @@ export const translations: TranslationType[] = [
 		english: 'Water',
 		pronounciation: 'naam',
 		example: 'pom jaak duuum naam'
+	},
+	{
+		thai: 'อันนี้',
+		english: 'This thing',
+		pronounciation: 'ani',
+		example: 'ani tawraii nah krab'
+	},
+	{
+		thai: 'เท่าไหร่',
+		english: 'How much',
+		pronounciation: 'taw-raii, towraii',
+		example: 'ani tawraii nah krab'
+	},
+	{
+		thai: 'มา',
+		english: 'Come',
+		pronounciation: 'ma',
+		example: 'kin khaw ma ruuuwe yang'
+	},
+	{
+		thai: 'หรือ',
+		english: 'Or',
+		pronounciation: 'ruuuwe',
+		example: 'kin khaw ma ruuuwe yang'
+	},
+	{
+		thai: 'ยัง',
+		english: 'Yet',
+		pronounciation: 'yang',
+		example: 'kin khaw ma ruuuwe yang'
 	}
 ];
 
