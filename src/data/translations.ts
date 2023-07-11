@@ -263,6 +263,18 @@ export const translations: TranslationType[] = [
 		english: 'Yet',
 		pronounciation: 'yang',
 		example: 'kin khaw ma ruuuwe yang'
+	},
+	{
+		thai: 'วัน',
+		english: 'Day',
+		pronounciation: 'one',
+		example: 'one nee jaak kin araii'
+	},
+	{
+		thai: 'นี้',
+		english: 'This / present',
+		pronounciation: 'nee',
+		example: 'one nee jaak kin araii'
 	}
 ];
 

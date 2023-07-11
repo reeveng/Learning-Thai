@@ -1,6 +1,5 @@
 export type AlphabetEntry = {
 	letter: string;
-	english: string;
 	pronounciation: string;
 	explanation: string;
 	example: string;
@@ -9,7 +8,6 @@ export type AlphabetEntry = {
 export const translations: AlphabetEntry[] = [
 	{
 		letter: '',
-		english: '',
 		pronounciation: '',
 		explanation: '',
 		example: ''
@@ -18,7 +16,6 @@ export const translations: AlphabetEntry[] = [
 
 // ,{
 // 		letter: '',
-// 		english: '',
 // 		pronounciation: '',
 // 		explanation: '',
 // 		example: ''

@@ -51,6 +51,10 @@ export const clarifications: ClarificationType[] = [
 	{
 		sentence: 'kin khaw ma ruuuwe yang',
 		explanation: 'Eat rice come or yet? => Did you eat before coming here?'
+	},
+	{
+		sentence: 'one nee',
+		explanation: 'Day this => today'
 	}
 ];
 // ,{
