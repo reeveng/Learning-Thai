@@ -55,6 +55,10 @@ export const clarifications: ClarificationType[] = [
 	{
 		sentence: 'one nee',
 		explanation: 'Day this => today'
+	},
+	{
+		sentence: 'pom poot thai dai',
+		explanation: 'I speak thai can => I can speak Thai.'
 	}
 ];
 // ,{

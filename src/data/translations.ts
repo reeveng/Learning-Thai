@@ -275,6 +275,24 @@ export const translations: TranslationType[] = [
 		english: 'This / present',
 		pronounciation: 'nee',
 		example: 'one nee jaak kin araii'
+	},
+	{
+		thai: 'พูด',
+		english: 'Speak',
+		pronounciation: 'poo-t, poot',
+		example: 'pom poot thai dai nah krab'
+	},
+	{
+		thai: 'ไทย',
+		english: 'Thai (language)',
+		pronounciation: 'thai',
+		example: 'pom poot thai dai nah krab'
+	},
+	{
+		thai: 'ได้',
+		english: 'Can',
+		pronounciation: 'die / dai',
+		example: 'pom poot thai dai nah krab'
 	}
 ];
 
