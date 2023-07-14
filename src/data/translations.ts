@@ -293,6 +293,42 @@ export const translations: TranslationType[] = [
 		english: 'Can',
 		pronounciation: 'die / dai',
 		example: 'pom poot thai dai nah krab'
+	},
+	{
+		thai: 'ฝรั่ง',
+		english: 'Foreigner (white / white passing)',
+		pronounciation: 'farang',
+		example: 'pom farang ki nok'
+	},
+	{
+		thai: 'ขี้',
+		english: 'Shit',
+		pronounciation: 'ki',
+		example: 'pom farang ki nok'
+	},
+	{
+		thai: 'นก',
+		english: 'Bird',
+		pronounciation: 'nok',
+		example: 'pom farang ki nok'
+	},
+	{
+		thai: 'ตังค์',
+		english: 'Money',
+		pronounciation: 'tang',
+		example: 'maai mi tang nah krab'
+	},
+	{
+		thai: 'สตางค์',
+		english: 'Money / cents',
+		pronounciation: 'satang',
+		example: 'maai mi satang nah krab'
+	},
+	{
+		thai: 'ไม่',
+		english: 'No',
+		pronounciation: 'maai',
+		example: 'maai mi tang nah krab'
 	}
 ];
 

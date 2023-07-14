@@ -59,6 +59,10 @@ export const clarifications: ClarificationType[] = [
 	{
 		sentence: 'pom poot thai dai',
 		explanation: 'I speak thai can => I can speak Thai.'
+	},
+	{
+		sentence: 'farang ki nok',
+		explanation: `foreigner shit bird => foreinger that is a cheap skate, "farang ki nok" is a slur often used to refer to foreigners who do not want to spend any money or foreigners that are extremely (abnormally) cheap, or used to refer to white trash, e.g.: A foreigner that trying to get a discount for something that is very cheap already`
 	}
 ];
 // ,{
