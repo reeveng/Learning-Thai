@@ -329,6 +329,12 @@ export const translations: TranslationType[] = [
 		english: 'No',
 		pronounciation: 'maai',
 		example: 'maai mi tang nah krab'
+	},
+	{
+		thai: 'นอน',
+		english: 'Sleep',
+		pronounciation: 'no-oo-n, nooon',
+		example: 'pom jaak nooon'
 	}
 ];
 
