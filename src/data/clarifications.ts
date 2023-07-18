@@ -63,6 +63,11 @@ export const clarifications: ClarificationType[] = [
 	{
 		sentence: 'farang ki nok',
 		explanation: `foreigner shit bird => foreinger that is a cheap skate, "farang ki nok" is a slur often used to refer to foreigners who do not want to spend any money or foreigners that are extremely (abnormally) cheap, or used to refer to white trash, e.g.: A foreigner that is trying to get a discount for something that is very cheap already`
+	},
+	{
+		sentence: 'kancheiaw',
+		explanation:
+			'Adorable => The adorableness is so overwhelming, that I am feeling itchy => Something is super cute'
 	}
 ];
 // ,{

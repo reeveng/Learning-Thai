@@ -335,6 +335,12 @@ export const translations: TranslationType[] = [
 		english: 'Sleep',
 		pronounciation: 'no-oo-n, nooon',
 		example: 'pom jaak nooon'
+	},
+	{
+		thai: 'คันแข้ว',
+		english: 'Adorable (Isaan)',
+		pronounciation: 'Kan-cheiaw, kancheiaw',
+		example: 'kancheiaw maak'
 	}
 ];
 
