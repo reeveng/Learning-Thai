@@ -140,7 +140,7 @@ export const translations: TranslationType[] = [
 	},
 	{
 		thai: 'ทำ',
-		english: 'Do',
+		english: 'Do (something)',
 		pronounciation: 'tam',
 		example: 'tam araii yu?'
 	},
@@ -369,7 +369,7 @@ export const translations: TranslationType[] = [
 	},
 	{
 		thai: 'รับ',
-		english: 'Receive',
+		english: 'Receive (something)',
 		pronounciation: 'rap',
 		example: 'hong rap khek yu tinai?'
 	}
