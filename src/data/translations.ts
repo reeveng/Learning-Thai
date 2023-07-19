@@ -232,7 +232,8 @@ export const translations: TranslationType[] = [
 		thai: 'น้ำ',
 		english: 'Water',
 		pronounciation: 'naam',
-		example: 'pom jaak duuum naam'
+		example: '"pom jaak duuum naam", "hong naam"'
+		// TODO: make an example array instead of whatever this is and render different examples on different lines to make it clearer :)
 	},
 	{
 		thai: 'อันนี้',
@@ -334,7 +335,7 @@ export const translations: TranslationType[] = [
 		thai: 'นอน',
 		english: 'Sleep',
 		pronounciation: 'no-oo-n, nooon',
-		example: 'pom jaak nooon'
+		example: '"pom jaak nooon", "hong nooon"'
 	},
 	{
 		thai: 'คันแข้ว',
