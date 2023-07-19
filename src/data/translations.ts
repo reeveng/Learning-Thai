@@ -341,6 +341,36 @@ export const translations: TranslationType[] = [
 		english: 'Adorable (Isaan)',
 		pronounciation: 'Kan-cheiaw, kancheiaw',
 		example: 'kancheiaw maak'
+	},
+	{
+		thai: 'ห้อง',
+		english: 'Room',
+		pronounciation: 'hong',
+		example: 'hong naam yu tinai?'
+	},
+	{
+		thai: 'ที่ไหน',
+		english: 'Where',
+		pronounciation: 'tinai',
+		example: 'hong naam yu tinai?'
+	},
+	{
+		thai: 'ครัว',
+		english: 'Kitchen',
+		pronounciation: 'kruwa',
+		example: 'hong kruwa yu tinai?'
+	},
+	{
+		thai: 'แขก',
+		english: 'Guest',
+		pronounciation: 'khek',
+		example: 'hong rap khek yu tinai?'
+	},
+	{
+		thai: 'รับ',
+		english: 'Receive',
+		pronounciation: 'rap',
+		example: 'hong rap khek yu tinai?'
 	}
 ];
 

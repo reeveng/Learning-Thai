@@ -68,6 +68,19 @@ export const clarifications: ClarificationType[] = [
 		sentence: 'kancheiaw',
 		explanation:
 			'Adorable => The adorableness is so overwhelming, that I am feeling itchy => Something is super cute'
+	},
+	{
+		sentence: 'hong rap khek yu tinai?',
+		explanation:
+			'Room receive guest stay where? => Where is the living room? => "rap khek" => welcoming guests, "hong rap khek" => living room'
+	},
+	{
+		sentence: 'hong nooon',
+		explanation: 'room bed => Bedroom'
+	},
+	{
+		sentence: 'hong naam',
+		explanation: 'room water => Bathroom'
 	}
 ];
 // ,{
