@@ -372,6 +372,24 @@ export const translations: TranslationType[] = [
 		english: 'Receive (something)',
 		pronounciation: 'rap',
 		example: 'hong rap khek yu tinai?'
+	},
+	{
+		thai: 'เที่ยว',
+		english: 'Travel / trip',
+		pronounciation: 'tiaw',
+		example: 'pai tiaw gan teu'
+	},
+	{
+		thai: 'กัน',
+		english: 'Together',
+		pronounciation: 'gan',
+		example: 'pai tiaw gan teu'
+	},
+	{
+		thai: 'เถอะ',
+		english: "Let us / let's",
+		pronounciation: 'teu',
+		example: 'pai tiaw gan teu'
 	}
 ];
 
