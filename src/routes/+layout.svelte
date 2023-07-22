@@ -40,6 +40,9 @@
 
 	:global(h2) {
 		@apply font-bold text-lg md:text-3xl mt-20;
+		font-family: 'Press Start 2P', 'JetBrains Mono', monospace, system-ui, -apple-system,
+			BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+			'Helvetica Neue', sans-serif;
 	}
 	/* ----------------------------------
 		Headings end
