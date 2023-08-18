@@ -72,7 +72,7 @@ export const clarifications: ClarificationType[] = [
 	{
 		sentence: 'hong rap khek yu tinai?',
 		explanation:
-			'Room receive guest stay where? => Where is the living room? => "rap khek" => welcoming guests, "hong rap khek" => living room'
+			'Room receive guest stay where? => Where is the living room? => "rap khek" => welcoming guests, "hong rap khek" => "living room" => room where guests are entertained'
 	},
 	{
 		sentence: 'hong nooon',
@@ -81,6 +81,10 @@ export const clarifications: ClarificationType[] = [
 	{
 		sentence: 'hong naam',
 		explanation: 'room water => Bathroom'
+	},
+	{
+		sentence: 'look',
+		explanation: `look => indicates an amount of items in formal Thai, in english it would be equivalent to: "round objects" or "long objects", for example, with mango or a stone you'd use "look"`
 	}
 ];
 // ,{
