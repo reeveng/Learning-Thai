@@ -76,14 +76,18 @@
 <table>
 	<thead>
 		<tr>
+			<th aria-hidden="true" />
 			{#each Object.keys(extendedClarifications[0]) as key}
 				<th class="px-6 py-4">{titlize(key)}</th>
 			{/each}
 		</tr>
 	</thead>
 	<tbody>
-		{#each extendedClarifications as clarification}
+		{#each extendedClarifications as clarification, index}
 			<tr>
+				<td aria-hidden="true" class="text-center px-6 py-4 font-bold bg-neutral-600">
+					{humanReadableIndex(index)}
+				</td>
 				{#each Object.values(clarification) as value}
 					<td class="px-6 py-4">{value}</td>
 				{/each}

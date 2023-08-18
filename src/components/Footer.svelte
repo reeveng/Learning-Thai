@@ -7,7 +7,7 @@
 	<section>
 		<ul>
 			<li>
-				<a href={urlSocials}>Made with 💕 by JMAD</a>
+				<a href={urlSocials}>Made with 💕 and 💻 by JMAD</a>
 			</li>
 			<li>
 				<a href={urlRepo}>
