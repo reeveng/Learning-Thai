@@ -390,6 +390,42 @@ export const translations: TranslationType[] = [
 		english: "Let us / let's",
 		pronounciation: 'teu',
 		example: 'pai tiaw gan teu'
+	},
+	{
+		thai: 'ซื้อ',
+		english: 'Buy',
+		pronounciation: 'Suuuue',
+		example: 'pom jaak suuuue appen ha look'
+	},
+	{
+		thai: 'แอปเปิ้ล',
+		english: 'Apple',
+		pronounciation: 'appen',
+		example: 'pom jaak suuuue appen ha look'
+	},
+	{
+		thai: 'ห้า',
+		english: 'Five (5)',
+		pronounciation: 'Ha',
+		example: 'appen ha-sip look'
+	},
+	{
+		thai: 'สิบ',
+		english: 'Ten (10)',
+		pronounciation: 'Sip',
+		example: 'appen ha-sip look'
+	},
+	{
+		thai: 'ห้าสิบ',
+		english: 'Fifty (50)',
+		pronounciation: 'ha-sip',
+		example: 'appen ha-sip look'
+	},
+	{
+		thai: 'ลูก',
+		english: 'Amount of something',
+		pronounciation: 'look',
+		example: 'appen ha-sip look'
 	}
 ];
 
