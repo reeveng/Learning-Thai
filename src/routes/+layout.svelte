@@ -15,7 +15,7 @@
 <style lang="postcss">
 	:global(html),
 	:global(body) {
-		@apply bg-neutral-900 min-w-full min-h-full m-0 p-0 text-neutral-200;
+		@apply bg-black min-w-full min-h-full m-0 p-0 text-neutral-200;
 		font-family: 'JetBrains Mono', monospace, system-ui, -apple-system, BlinkMacSystemFont,
 			'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	}
@@ -51,8 +51,8 @@
 	/* ----------------------------------
 		Buttons
 	   ---------------------------------- */
-	:global(button) {
-		@apply bg-neutral-800 border-4 border-yellow-500 text-yellow-500 hover:bg-neutral-600 rounded-full py-2 px-4 text-center my-2;
+	:global(.button) {
+		@apply bg-neutral-800 border-4 border-yellow-500 text-yellow-500 hover:bg-neutral-800 rounded-full py-2 px-4 text-center my-2;
 		min-width: 150px;
 	}
 
@@ -64,11 +64,11 @@
 		Table
 	   ---------------------------------- */
 	:global(table) {
-		@apply table-auto rounded-lg overflow-hidden mb-10 border-neutral-600;
+		@apply table-auto rounded-lg overflow-hidden mb-10 border-neutral-800;
 	}
 
 	:global(tr) {
-		@apply border-neutral-600 border-b-4;
+		@apply border-neutral-800 border-b-4;
 	}
 
 	:global(tr:last-of-type) {
@@ -76,11 +76,11 @@
 	}
 
 	:global(th) {
-		@apply font-bold text-xl bg-neutral-600;
+		@apply font-bold text-xl bg-neutral-800;
 	}
 
 	:global(tr:nth-child(even)) {
-		@apply bg-black;
+		@apply bg-neutral-950;
 	}
 	/* ----------------------------------
 		Table end

@@ -106,7 +106,9 @@
 <h1>Flash cards</h1>
 
 <div class="settings-container">
-	<button on:click={toggleSettings}>{showSettings ? 'Hide' : 'Show'} settings</button>
+	<button class="button" on:click={toggleSettings}>
+		{showSettings ? 'Hide' : 'Show'} settings
+	</button>
 
 	{#if showSettings}
 		<div class="card settings">
@@ -114,7 +116,7 @@
 				<label for="displayOption" class="text-sm font-bold text-neutral-400">
 					What do you want to practice?
 				</label>
-				<select id="displayOption" bind:value={displayOption} class="">
+				<select id="displayOption" class="button" bind:value={displayOption}>
 					{#each OPTIONS as option}
 						<option value={option}>{titlize(option)}</option>
 					{/each}
@@ -144,7 +146,7 @@
 				<label for="resetHistory" class="text-sm font-bold text-neutral-400">
 					Would you like to reset your history?
 				</label>
-				<button id="resetHistory" on:click={resetHistory}>Reset</button>
+				<button class="button" id="resetHistory" on:click={resetHistory}>Reset</button>
 			</div>
 		</div>
 	{/if}
@@ -166,9 +168,11 @@
 		{/if}
 	</div>
 	<div class="button-toolbar">
-		<button on:click={previousTranslation} disabled={history.length < 2}>Previous</button>
-		<button on:click={toggleAnswer}>{showAnswer ? 'Hide' : 'Show'}</button>
-		<button on:click={nextTranslation}>Next</button>
+		<button class="button" on:click={previousTranslation} disabled={history.length < 2}>
+			Previous
+		</button>
+		<button class="button" on:click={toggleAnswer}>{showAnswer ? 'Hide' : 'Show'}</button>
+		<button class="button" on:click={nextTranslation}>Next</button>
 	</div>
 {:else}
 	<p>Loading...</p>
@@ -217,15 +221,15 @@
 	}
 
 	.card {
-		@apply bg-neutral-800 rounded-2xl w-full flex flex-col items-center p-4 outline outline-2 outline-neutral-600;
+		@apply bg-neutral-900 rounded-2xl w-full flex flex-col items-center p-4 border-4 border-neutral-700;
 		min-height: 15rem;
 	}
 
 	select {
-		@apply appearance-none bg-neutral-800 border-4 border-yellow-500 text-yellow-500 rounded p-2 text-center hover:bg-neutral-600;
+		@apply rounded;
 	}
 
 	option {
-		@apply text-neutral-800 select-none cursor-default hover:bg-neutral-600;
+		@apply text-neutral-800 select-none cursor-default hover:bg-neutral-800;
 	}
 </style>

@@ -27,19 +27,15 @@
 	system too, when I compare the written words and their pronounciations 👍.
 </p>
 
-<section class="w-full text-left text-xs">
+<section class="w-full text-left text-xs flex flex-col gap-10">
 	<p>
 		Do you want an interactive way to learn the words in the table below?
-		<a href={URLS.FLASH_CARDS}>
-			<button>Check out the flash cards!</button>
-		</a>
+		<a class="button" href={URLS.FLASH_CARDS}> Check out the flash cards! </a>
 	</p>
 
 	<p>
 		Do you want to learn the individual Thai letters?
-		<a href={URLS.ALPHABET}>
-			<button>Check out the full alphabet!</button>
-		</a>
+		<a class="button" href={URLS.ALPHABET}> Check out the full alphabet! </a>
 	</p>
 </section>
 
@@ -55,7 +51,7 @@
 	<tbody>
 		{#each translations as translation, index}
 			<tr>
-				<td aria-hidden="true" class="text-center px-6 py-4 font-bold bg-neutral-600">
+				<td aria-hidden="true" class="text-center px-6 py-4 font-bold bg-neutral-800">
 					{humanReadableIndex(index)}
 				</td>
 				{#each Object.values(translation) as value}
@@ -85,7 +81,7 @@
 	<tbody>
 		{#each extendedClarifications as clarification, index}
 			<tr>
-				<td aria-hidden="true" class="text-center px-6 py-4 font-bold bg-neutral-600">
+				<td aria-hidden="true" class="text-center px-6 py-4 font-bold bg-neutral-800">
 					{humanReadableIndex(index)}
 				</td>
 				{#each Object.values(clarification) as value}

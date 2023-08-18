@@ -27,23 +27,23 @@
 	/* ----------------------------------
 		Table
 	   ---------------------------------- */
-	:global(table) {
-		@apply table-auto rounded-lg overflow-hidden mb-10 border-neutral-600;
+	table {
+		@apply table-auto rounded-lg overflow-hidden mb-10 border-neutral-800;
 	}
 
-	:global(tr) {
-		@apply border-neutral-600 border-b-4;
+	tr {
+		@apply border-neutral-800 border-b-4;
 	}
 
-	:global(tr:last-of-type) {
+	tr:last-of-type {
 		@apply border-none;
 	}
 
-	:global(th) {
-		@apply font-bold text-xl bg-neutral-600;
+	th {
+		@apply font-bold text-xl bg-neutral-800;
 	}
 
-	:global(tr:nth-child(even)) {
+	tr:nth-child(even) {
 		@apply bg-black;
 	}
 	/* ----------------------------------
