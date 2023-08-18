@@ -125,7 +125,8 @@
 
 			<div class="settings-item">
 				<label for="displayOption" class="text-sm font-bold text-neutral-400">
-					The word needs to be encountered {maxHistoryLength} times before it can be shown again.
+					When the term "X" is shown, there should be a span of {maxHistoryLength} other words before
+					"X" reappears.
 					<br />
 					How often would you want a word to return {`(min: ${ABSOLUTE_MIN_AMOUNT_OF_HISTORY}, max: ${
 						translations.length - ABSOLUTE_MIN_AMOUNT_OF_HISTORY
