@@ -426,6 +426,30 @@ export const translations: TranslationType[] = [
 		english: 'Amount of something',
 		pronounciation: 'look',
 		example: 'appen ha-sip look'
+	},
+	{
+		thai: 'รู้จัก',
+		english: 'Know',
+		pronounciation: 'ru-chak, ruchak',
+		example: 'khun ru-chak passa program araii baaang, krab?'
+	},
+	{
+		thai: 'ภาษา',
+		english: 'Language',
+		pronounciation: 'passa',
+		example: 'khun ru-chak passa program araii baaang, krab?'
+	},
+	{
+		thai: 'โปรแกรม',
+		english: 'Program',
+		pronounciation: 'program',
+		example: 'khun ru-chak passa program araii baaang, krab?'
+	},
+	{
+		thai: 'บ้าง',
+		english: 'Some / any / somewhat',
+		pronounciation: 'baaang',
+		example: 'khun ru-chak passa program araii baaang, krab?'
 	}
 ];
 
