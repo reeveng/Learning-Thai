@@ -85,6 +85,15 @@ export const clarifications: ClarificationType[] = [
 	{
 		sentence: 'look',
 		explanation: `look => indicates an amount of items in formal Thai, in english it would be equivalent to: "round objects" or "long objects", for example, with mango or a stone you'd use "look"`
+	},
+	{
+		sentence: 'maai sabai',
+		explanation: 'maai sabai => literally translated to => not comfortable but can mean sick/ill'
+	},
+	{
+		sentence: 'pai ha moh ma',
+		explanation:
+			'the combination of "pai" and "ma" in this sentence indicates that it is in the past, a.k.a. went instead of go, order of "pai" and "ma" is important, the "ma" is supposed to come after the "pai"'
 	}
 ];
 // ,{

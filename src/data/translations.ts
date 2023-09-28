@@ -450,6 +450,26 @@ export const translations: TranslationType[] = [
 		english: 'Some / any / somewhat',
 		pronounciation: 'baaang',
 		example: 'khun ru-chak passa program araii baaang, krab?'
+	},
+	{
+		thai: 'สบาย',
+		english: 'Comfortable',
+		pronounciation: 'sa-bai, sabai (pronounced as "sa bye")',
+		example: 'pom maai sabai krab'
+	},
+	{
+		thai: 'หา',
+		english: 'Find/see',
+		pronounciation:
+			"hahnn, ha (pronounced with the a shifting tone, first going down a tone, then going up slightly, as if you're thinking)",
+		example: 'one nee pom pai ha moh ma'
+	},
+	{
+		thai: 'หมอ',
+		english: 'doctor',
+		pronounciation:
+			"m-oh, moh (pronounced in a way as if you say 'oh' when you're disappointed, like 'oh :'(, why did this happen?')",
+		example: 'one nee pom pai ha moh ma'
 	}
 ];
 
