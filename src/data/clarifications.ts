@@ -94,6 +94,18 @@ export const clarifications: ClarificationType[] = [
 		sentence: 'pai ha moh ma',
 		explanation:
 			'the combination of "pai" and "ma" in this sentence indicates that it is in the past, a.k.a. went instead of go, order of "pai" and "ma" is important, the "ma" is supposed to come after the "pai"'
+	},
+	{
+		sentence: 'sawadi thon chaw',
+		explanation: 'Good morning'
+	},
+	{
+		sentence: 'pom chu',
+		explanation: 'My name is'
+	},
+	{
+		sentence: '',
+		explanation: "You're welcome"
 	}
 ];
 // ,{

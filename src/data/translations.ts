@@ -129,14 +129,14 @@ export const translations: TranslationType[] = [
 	{
 		thai: 'ขอบคุณ',
 		english: 'Thanks / thanks you',
-		pronounciation: 'khop-khun, khopkhun',
-		example: 'khop-khun nah krab'
+		pronounciation: 'khob-khun, khobkhun',
+		example: 'khobkhun nah krab'
 	},
 	{
 		thai: 'นะ',
 		english: 'Enforces Yes (expresses a deeper yes)',
 		pronounciation: 'nah',
-		example: 'khop-khun nah krab'
+		example: 'khobkhun nah krab'
 	},
 	{
 		thai: 'ทำ',
@@ -453,13 +453,13 @@ export const translations: TranslationType[] = [
 	},
 	{
 		thai: 'สบาย',
-		english: 'Comfortable',
+		english: 'Comfortable / good',
 		pronounciation: 'sa-bai, sabai (pronounced as "sa bye")',
 		example: 'pom maai sabai krab'
 	},
 	{
 		thai: 'หา',
-		english: 'Find/see',
+		english: 'Find / see',
 		pronounciation:
 			"hahnn, ha (pronounced with the a shifting tone, first going down a tone, then going up slightly, as if you're thinking)",
 		example: 'one nee pom pai ha moh ma'
@@ -470,6 +470,114 @@ export const translations: TranslationType[] = [
 		pronounciation:
 			"m-oh, moh (pronounced in a way as if you say 'oh' when you're disappointed, like 'oh :'(, why did this happen?')",
 		example: 'one nee pom pai ha moh ma'
+	},
+	{
+		thai: 'สวัสดี',
+		english: 'Hello',
+		pronounciation: 'sa-wa-di-krab, sawadikrab',
+		example: 'sawadikrab, sabai di maai?'
+	},
+	{
+		thai: 'ดี',
+		english: 'Good',
+		pronounciation: 'di',
+		example: 'sawadikrab, sabai di maai?'
+	},
+	{
+		thai: 'ตอนเช้า',
+		english: 'Morning',
+		pronounciation: 'thon chaw',
+		example: 'sawadi thon chaw'
+	},
+	{
+		thai: 'ที่',
+		english: 'That / at',
+		pronounciation: 't',
+		example: 'khobkhun t chuwai nah krab'
+	},
+	{
+		thai: 'ช่วย',
+		english: 'Help',
+		pronounciation: 'Chu-wai, chuwai',
+		example: 'khobkhun t chuwai nah krab'
+	},
+	{
+		thai: 'ชื่อ',
+		english: 'name',
+		pronounciation: 'chu',
+		example: 'pom chu Roger'
+	},
+	{
+		thai: 'ด้วย',
+		english: 'With',
+		pronounciation: 'du-wai, duwai',
+		example: 'duwai khwamyindi krab'
+	},
+	{
+		thai: 'ความยินดี',
+		english: 'Pleasure / joy',
+		pronounciation: 'khwam-yin-di, khwamyindi',
+		example: 'duwai khwamyindi krab'
+	},
+	{
+		thai: 'หนึ่ง',
+		english: 'One',
+		pronounciation: 'Nue-ng, nueng',
+		example: 'Nueng, song, saam, sie, ha, hok, ched, pet, kaaw, sip'
+	},
+	{
+		thai: 'สอง',
+		english: 'Two',
+		pronounciation: 'song',
+		example: 'Nueng, song, saam, sie, ha, hok, ched, pet, kaaw, sip'
+	},
+	{
+		thai: 'สาม',
+		english: 'Three',
+		pronounciation: 'saam',
+		example: 'Nueng, song, saam, sie, ha, hok, ched, pet, kaaw, sip'
+	},
+	{
+		thai: 'สี่',
+		english: 'Four',
+		pronounciation: 'sie',
+		example: 'Nueng, song, saam, sie, ha, hok, ched, pet, kaaw, sip'
+	},
+	{
+		thai: 'สีห้า',
+		english: 'Five',
+		pronounciation: 'ha',
+		example: 'Nueng, song, saam, sie, ha, hok, ched, pet, kaaw, sip'
+	},
+	{
+		thai: 'หก',
+		english: 'Six',
+		pronounciation: 'hok',
+		example: 'Nueng, song, saam, sie, ha, hok, ched, pet, kaaw, sip'
+	},
+	{
+		thai: 'เจ็ด',
+		english: 'Seven',
+		pronounciation: 'ched',
+		example: 'Nueng, song, saam, sie, ha, hok, ched, pet, kaaw, sip'
+	},
+	{
+		thai: 'แปด',
+		english: 'Eight',
+		pronounciation: 'pet',
+		example: 'Nueng, song, saam, sie, ha, hok, ched, pet, kaaw, sip'
+	},
+	{
+		thai: 'เก้า',
+		english: 'Nine',
+		pronounciation: 'kaaw',
+		example: 'Nueng, song, saam, sie, ha, hok, ched, pet, kaaw, sip'
+	},
+	{
+		thai: 'สิบ',
+		english: 'Ten',
+		pronounciation: 'sip',
+		example: 'Nueng, song, saam, sie, ha, hok, ched, pet, kaaw, sip'
 	}
 ];
 
