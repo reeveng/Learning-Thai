@@ -407,25 +407,25 @@ export const translations: TranslationType[] = [
 		thai: 'ห้า',
 		english: 'Five (5)',
 		pronounciation: 'Ha',
-		example: 'appen ha-sip look'
+		example: 'appen hasip look'
 	},
 	{
 		thai: 'สิบ',
 		english: 'Ten (10)',
 		pronounciation: 'Sip',
-		example: 'appen ha-sip look'
+		example: 'appen hasip look'
 	},
 	{
 		thai: 'ห้าสิบ',
 		english: 'Fifty (50)',
-		pronounciation: 'ha-sip',
-		example: 'appen ha-sip look'
+		pronounciation: 'ha-sip, hasip',
+		example: 'appen hasip look'
 	},
 	{
 		thai: 'ลูก',
 		english: 'Amount of something',
 		pronounciation: 'look',
-		example: 'appen ha-sip look'
+		example: 'appen hasip look'
 	},
 	{
 		thai: 'รู้จัก',
