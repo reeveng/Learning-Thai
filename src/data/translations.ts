@@ -578,6 +578,18 @@ export const translations: TranslationType[] = [
 		english: 'Ten',
 		pronounciation: 'sip',
 		example: 'Nueng, song, saam, sie, ha, hok, ched, pet, kaaw, sip'
+	},
+	{
+		thai: 'เดท',
+		english: 'Date',
+		pronounciation: 'date',
+		example: 'khun jaak pai date kap pom maai?'
+	},
+	{
+		thai: 'กับ',
+		english: 'With',
+		pronounciation: 'kap',
+		example: 'khun jaak pai date kap pom maai?'
 	}
 ];
 

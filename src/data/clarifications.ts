@@ -106,6 +106,10 @@ export const clarifications: ClarificationType[] = [
 	{
 		sentence: '',
 		explanation: "You're welcome"
+	},
+	{
+		sentence: 'khun jaak pai date kap pom maai?',
+		explanation: 'Would you want to go on a date with me?'
 	}
 ];
 // ,{
