@@ -5,7 +5,7 @@ export type ClarificationType = {
 
 export type ExtendedClarificationType = ClarificationType & {
 	translationIndexes?: number[];
-	occurances?: string;
+	occurrences?: string;
 };
 
 export const clarifications: ClarificationType[] = [

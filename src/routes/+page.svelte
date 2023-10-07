@@ -3,11 +3,11 @@
 	import { clarifications, type ExtendedClarificationType } from '$data/clarifications';
 
 	import { titlize } from '$utils/titlize';
-	import { addOccurancesToClarification } from './helper';
+	import { addOccurrencesToClarification } from './helper';
 	import { humanReadableIndex } from '$utils/humanReadableIndex';
 	import { URLS } from '$constants/urls';
 
-	const extendedClarifications: ExtendedClarificationType[] = addOccurancesToClarification(
+	const extendedClarifications: ExtendedClarificationType[] = addOccurrencesToClarification(
 		clarifications,
 		translations
 	);

@@ -4,7 +4,7 @@ import type { TranslationType } from '$data/translations';
 import { humanReadableIndex } from '$utils/humanReadableIndex';
 import { removeNonLetters } from '$utils/removeNonLetters';
 
-export const addOccurancesToClarification = (
+export const addOccurrencesToClarification = (
 	clarifications: ClarificationType[],
 	translations: TranslationType[]
 ): ExtendedClarificationType[] => {
@@ -32,14 +32,14 @@ export const addOccurancesToClarification = (
 			const firstIndexB = b.translationIndexes[0];
 			return firstIndexA - firstIndexB;
 		}
-		// Handle cases where either a.occurances or b.occurances is undefined or empty
+		// Handle cases where either a.occurrences or b.occurrences is undefined or empty
 		// Adjust the comparison logic based on your requirements
 		return 0;
 	});
 
 	extendedClarifications.map((clarification) => {
 		if (clarification.translationIndexes) {
-			clarification.occurances = groupIndexes(clarification.translationIndexes);
+			clarification.occurrences = groupIndexes(clarification.translationIndexes);
 		}
 
 		delete clarification.translationIndexes;
