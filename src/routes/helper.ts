@@ -1,4 +1,5 @@
 import type { ClarificationType, ExtendedClarificationType } from '$data/clarifications';
+
 import type { TranslationType } from '$data/translations';
 import { humanReadableIndex } from '$utils/humanReadableIndex';
 import { removeNonLetters } from '$utils/removeNonLetters';
@@ -65,7 +66,7 @@ function groupIndexes(translationIndexes: number[]): string {
 			if (start !== end) {
 				groupedIndexes.push(`${start}-${end}`);
 			} else {
-				groupedIndexes.push(start.toString());
+				groupedIndexes.push(`${start}`);
 			}
 			start = translationIndexes[i];
 			end = translationIndexes[i];
@@ -76,7 +77,7 @@ function groupIndexes(translationIndexes: number[]): string {
 	if (start !== end) {
 		groupedIndexes.push(`${start}-${end}`);
 	} else {
-		groupedIndexes.push(start.toString());
+		groupedIndexes.push(`${start}`);
 	}
 
 	// Join the grouped indexes with commas

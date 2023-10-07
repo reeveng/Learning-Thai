@@ -26,7 +26,7 @@ export const clarifications: ClarificationType[] = [
 		explanation: 'I have a urinary problem.'
 	},
 	{
-		sentence: 'khop-khun nah krab',
+		sentence: 'khobkhun nah krab',
 		explanation:
 			'Thank you, yes! => The "nah krab" is a way to come over more polite, you can add it to nearly any sentence and seem more polite / higher educated.'
 	},
@@ -104,11 +104,11 @@ export const clarifications: ClarificationType[] = [
 		explanation: 'My name is'
 	},
 	{
-		sentence: '',
+		sentence: 'duwai khwamyindi',
 		explanation: "You're welcome"
 	},
 	{
-		sentence: 'khun jaak pai date kap pom maai?',
+		sentence: 'khun jaak pai date kap pom maai',
 		explanation: 'Would you want to go on a date with me?'
 	}
 ];
