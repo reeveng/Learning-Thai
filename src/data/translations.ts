@@ -590,6 +590,24 @@ export const translations: TranslationType[] = [
 		english: 'With',
 		pronounciation: 'kap',
 		example: 'khun jaak pai date kap pom maai?'
+	},
+	{
+		thai: "อังกฤษ",
+		english: "English (language)",
+		pronounciation: "ang-grit, anggrit",
+		example: "pom put passa anggrit"
+	},
+	{
+		thai: "พูด",
+		english: "Speak",
+		pronounciation: "put",
+		example: "pom put passa anggrit"
+	},
+	{
+		thai: "ภาษา",
+		english: "Language",
+		pronounciation: "pa-ssa, passa",
+		example: "pom put passa anggrit"
 	}
 ];
 
