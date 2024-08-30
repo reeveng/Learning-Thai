@@ -608,6 +608,30 @@ export const translations: TranslationType[] = [
 		english: "Language",
 		pronounciation: "pa-ssa, passa",
 		example: "pom put passa anggrit"
+	},
+	{
+		thai: "เลเวล / ระดับ",
+		english: "Level",
+		pronounciation: "lewel / ra-dap radap",
+		example: "radap thoupai"
+	},
+	{
+		thai: "",
+		english: "Next",
+		pronounciation: "thou-pai, thoupai",
+		example: "radap thoupai"
+	},
+	{
+		thai: "โรงเรียน",
+		english: "School",
+		pronounciation: "rooong rian",
+		example: "pom pai rooong rian"
+	},
+	{
+		thai: "ซื้อของ / ชอปปิ้ง",
+		english: "Shopping",
+		pronounciation: "suuuu khong / shop-ping shopping",
+		example: "pom pai suuuu khong"
 	}
 ];
 
